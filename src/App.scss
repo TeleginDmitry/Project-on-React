@@ -1,0 +1,71 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.post {
+    display: flex;
+    justify-content: center;
+
+    .post__item {
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #000;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
+
+.post__content {
+    max-width: 500px;
+}
+
+.post__title {
+    font-size: 20px;
+
+}
+
+.post__body {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.post__btns {}
+
+
+.form {
+    margin-bottom: 20px;
+}
+
+
+
+.post-enter {
+    transition: all .5s;
+    transform: scale(0);
+}
+
+.post-enter-active {
+    transform: scale(1);
+}
+
+.post-exit {
+    transition: all .5s;
+    transform: scale(1);
+}
+
+.post-exit-active {
+    transform: scale(0);
+}

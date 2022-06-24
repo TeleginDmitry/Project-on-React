@@ -1,0 +1,30 @@
+.rotate_block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px dashed #000;
+    animation-name: rotate;
+    animation-duration: .9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
